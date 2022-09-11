@@ -1,11 +1,11 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/stephen
+      url-base: https://github.com/Btc23
   projects:
     - name: zmk
-      remote: stephen
-      revision: stephen/split-encoder
+      remote: zmkfirmware
+      revision: add-support-right-encoder
       import: app/west.yml
   self:
     path: config
