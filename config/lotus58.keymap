@@ -41,15 +41,15 @@
 // | `     |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // | LS(F6)|  !  | HOME|   ^  |  END |  %   |                   | VOL^ |  PGUP |  INS  |  ^   |  PSCR |   -   |
 // |       |  #  |  <- |   v  | ->   |  $   |        |  |       | VOLv |    <- |   ^   |  ->  |   ~   |   _   |
-// |       |  @  |  -  |  (   |  )   |  &   |        |  |       | MUTE |  PGDN |   v   |  :   |   *   |   |   |
-//                     |  F11 |      |      |        |  |       |      |       |  F12  |       
+// | FLASH |  @  |  -  |  (   |  )   |  &   |        |  |       | MUTE |  PGDN |   v   |  :   |   *   |   |   |
+//                     |  F11 |      |      |        |  |       |      | FLASH |  F12  |
             bindings = <
 &kp GRAVE  &kp F1    &kp F2    &kp F3      &kp F4     &kp F5                     &kp F6        &kp F7     &kp F8    &kp F9     &kp F10   &kp PLUS
 &kp LS(F6) &kp EXCL  &kp HOME  &kp UP      &kp END    &kp PRCNT                  &kp C_VOL_UP  &kp PG_UP  &kp UP   &kp CARET  &kp PSCRN &kp MINUS
 &trans     &kp HASH  &kp LEFT  &kp DOWN    &kp RIGHT  &kp DLLR  &trans   &trans  &kp C_VOL_DN  &kp LEFT   &kp DOWN
 &kp RIGHT  &kp TILDE &kp UNDER
-&trans     &kp AT    &kp MINUS &kp LBRC    &kp RBRC   &kp AMPS  &trans   &trans  &kp C_MUTE    &kp PG_DN  &kp INS  &kp COLON  &kp STAR  &kp PIPE
-                               &kp F11     &trans     &trans    &trans   &trans  &trans        &trans     &kp F12
+&bootloader &kp AT    &kp MINUS &kp LBRC    &kp RBRC   &kp AMPS  &trans   &trans  &kp C_MUTE    &kp PG_DN  &kp INS  &kp COLON  &kp STAR  &kp PIPE
+                               &kp F11     &trans     &trans    &trans   &trans  &trans        &bootloader     &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
